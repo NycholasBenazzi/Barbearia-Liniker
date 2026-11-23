@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Barbearia Liniker e Caline Hair | Vila Helena, Santo André</title>
+<meta name="description" content="Barbearia e salão na Vila Helena, Santo André. Corte, barba e cabelo. Agende pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero" id="inicio">
+  <div class="wrap">
+    <div class="barra">
+      <span>Santo André, SP</span>
+      <a href="https://wa.me/5511970504865?text=Oi!%20Quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar</a>
+    </div>
+
+    <h1 class="marca" aria-label="Barbearia Liniker e Caline Hair">
+      <span><i>Liniker</i></span>
+      <span><i>&amp; Caline</i></span>
+      <span class="menor"><i>Barbearia e Hair</i></span>
+    </h1>
+
+    <div class="rodape-hero">
+      <p>Corte, barba e cabelo na Vila Helena. Chame no WhatsApp e marque seu horário.</p>
+      <a class="btn inv" href="https://wa.me/5511970504865?text=Oi!%20Quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar no WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="servicos" id="servicos">
+    <div class="wrap">
+      <h2>Serviços</h2>
+      <ul class="lista">
+        <li><div class="item"><h3>Corte masculino</h3><p>Acabamento limpo, do clássico ao moderno.</p></div></li>
+        <li><div class="item"><h3>Barba</h3><p>Aparar, alinhar e desenhar.</p></div></li>
+        <li><div class="item"><h3>Cabelo cacheado</h3><p>Corte e cuidado para cachos.</p></div></li>
+        <li><div class="item"><h3>Tranças</h3><p>Penteados trançados.</p></div></li>
+        <li><div class="item"><h3>Corte infantil</h3><p>Atendimento para os pequenos.</p></div></li>
+        <li><div class="item"><h3>Corte feminino e coloração</h3><p>Corte, cor e mudança de visual.</p></div></li>
+        <li><a class="item" href="https://wa.me/5511970504865?text=Oi!%20Quero%20saber%20os%20valores." target="_blank" rel="noopener"><h3>Valores</h3><p>Consulte pelo WhatsApp.</p></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="visita" id="visita">
+    <div class="wrap">
+      <div class="rev">
+        <h2>Onde estamos</h2>
+        <p class="end">R. das Hortências, 394<br>Vila Helena, Santo André - SP<br>CEP 09175-500</p>
+        <a class="tel" href="tel:+5511970504865">(11) 97050-4865</a>
+        <p class="nota">Chame para confirmar os horários de atendimento.</p>
+        <div class="acoes">
+          <a class="btn claro" href="https://wa.me/5511970504865?text=Oi!%20Quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar no WhatsApp</a>
+          <a class="btn inv" href="https://maps.app.goo.gl/moa3DGSbfygrTYSX6" target="_blank" rel="noopener">Abrir no Maps</a>
+        </div>
+      </div>
+      <iframe class="mapa rev" title="Mapa da Barbearia Liniker e Caline Hair" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=-23.6800097,-46.5162808&amp;z=16&amp;output=embed"></iframe>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">&copy; 2026 Barbearia Liniker e Caline Hair</div></footer>
+
+<a class="fixa" href="https://wa.me/5511970504865?text=Oi!%20Quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar no WhatsApp</a>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.item,.visita .rev');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('ve')});return}
+  var n=0,io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){
+        var t=e.target;
+        if(t.classList.contains('item')){t.style.transitionDelay=(n++%7)*60+'ms'}
+        t.classList.add('ve');io.unobserve(t)
+      }
+    })
+  },{threshold:.2,rootMargin:'0px 0px -5% 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
